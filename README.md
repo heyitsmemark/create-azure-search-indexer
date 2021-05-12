@@ -8,7 +8,7 @@ Create a new indexer using a local definition file:
 
 ```yaml
 - name: Create indexer
-  uses: heyitsmemark/create-azure-search-indexer@main
+  uses: heyitsmemark/create-azure-search-indexer@1.0.0
   with:
     azureSearchInstance: plop
     azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}
@@ -19,7 +19,7 @@ Create a new indexer using a remote definition file:
 
 ```yaml
 - name: Create indexer 
-  uses: heyitsmemark/create-azure-search-indexer@main
+  uses: heyitsmemark/create-azure-search-indexer@1.0.0
   with:
     azureSearchInstance: plop
     azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}
