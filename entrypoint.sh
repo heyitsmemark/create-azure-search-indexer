@@ -5,12 +5,12 @@ API_VERSION=2020-06-30
 set -e
 
 if [ -z "$INPUT_AZURESEARCHINSTANCE" ]; then
-  echo "AZURE_SEARCH_INSTANCE is not set."
+  echo "azureSearchInstance is not set."
   exit 1
 fi
 
 if [ -z "$INPUT_AZURESEARCHADMINKEY" ]; then
-  echo "AZURE_SEARCH_ADMIN_KEY is not set."
+  echo "azureSearchAdminKey is not set."
   exit 1
 fi
 
