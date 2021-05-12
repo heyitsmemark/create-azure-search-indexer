@@ -1,0 +1,23 @@
+# action.yml
+name: "Create Azure Cognitive Search Indexer"
+description: "Creates a new Indexer within a specified Azure Cognitive Search instance."
+branding:
+  icon: "search"
+  color: "green"
+inputs:
+  azureSearchInstance:
+    description: "The name of Azure Cognitive Search instance"
+    required: true
+  azureSearchAdminKey:
+    description: "The Azure Cognitive Search admin key"
+    required: true
+  indexerDefinitionFile:
+    description: "Relative path to a local definition file"
+    required: false
+  indexerDefinitionUri:
+    description: "URI path to a remote definition file"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"

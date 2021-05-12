@@ -1,0 +1,15 @@
+name: indexer-create-from-file
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: heyitsmemark/create-azure-search-indexer@main
+        with:
+          azureSearchInstance: plop
+          azureSearchAdminKey: ${{ secrets.AZURE_SEARCH_ADMIN_KEY }}
+          indexerDefinitionFile: ./test-definitions/indexer.json
